@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom,#af67e9,#6565e7);
+    height: 100vh;
+    width: 100%;
+    font-family: Kumbh Sans;
+    font-size: 12px;
+}
+
+.focal__box{
+    background: url(/images/bg-pattern-mobile.svg) no-repeat top center #ffffff;
+    border-radius: 30px;
+    position: relative;
+    width: 337.5px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.woman__illustration {
+    display: block;
+    position: absolute;
+    top: -110px;
+    left: 19px;
+}
+
+.section__FAQ {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 20px 50px 20px;
+    align-content: center;
+}
+
+.faq__title {
+    font-weight: 700;
+    text-decoration: solid;
+    text-align: center;
+    font-size: 200%;
+    color: #1d1e35;
+}
+
+.faq__questions {
+    font-size: 120%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e9;
+    flex-basis: 80%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #1d1e35;
+}
+
+a:hover,
+a:active{
+    color: #f47c57;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    display: none;
+    padding-top: 20px;
+    color: #787887;
+}
+
+.desktop {
+    display: none;
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+}
+
+@media only screen and (min-width: 375px){
+    .focal__box{
+        background:
+            url(/images/illustration-woman-online-desktop.svg) no-repeat -90px 60px,
+            url(/images/bg-pattern-desktop.svg) no-repeat -600px -300px #ffffff;
+        width: 1000px;
+    }
+
+
+    .section__FAQ {
+        width: 40%;
+        position: relative;
+        right: -500px;
+        padding-top: 70px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        position: absolute;
+        top: 300px;
+        left: -112px;
+    }
+    
+}
